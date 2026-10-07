@@ -1,0 +1,60 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Copy top crypto traders with Invo</title><meta name="description" content="Find top traders on leaderboards and mimic their positions in one click with Invo, a non-custodial social copy-trading app on Hyperliquid.">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<div class="wrap">
+<nav><div class="logo">INVO<span>.</span></div><a class="btn sm ref" href="#">Get Invo</a></nav>
+<header class="hero"><div>
+<h1>Trade like the <span class="grad">top traders</span>. In one tap.</h1>
+<p class="lead">Invo is a social copy-trading app for crypto. Discover proven traders on live leaderboards, mimic their positions instantly, and keep full custody of your funds.</p>
+<a class="btn ref" href="#">Join Invo with my link →</a>
+<div class="pills"><span class="pill">250K+ users</span><span class="pill">170+ futures pairs</span><span class="pill">Powered by Hyperliquid</span><span class="pill">Non-custodial</span></div>
+</div>
+<div class="qrcard"><div id="qr"></div><p>On desktop? Scan to sign up on your phone.</p></div></header>
+
+<section id="how"><h2>How it works</h2><p class="sub">Four steps from browsing to trading.</p>
+<div class="grid g4">
+<div class="card"><div class="num">1</div><h3>Find</h3><p>Browse leaderboards and trader profiles to see who's trading what, and how it's going.</p></div>
+<div class="card"><div class="num">2</div><h3>Mimic</h3><p>Copy a trader's position in one click across 170+ futures pairs.</p></div>
+<div class="card"><div class="num">3</div><h3>Track</h3><p>Follow your positions and the traders you copy from a social feed.</p></div>
+<div class="card"><div class="num">4</div><h3>Earn</h3><p>Trading well yourself? Traders earn when others copy them.</p></div>
+</div></section>
+
+<section id="features"><h2>Why Invo</h2><p class="sub">Social trading without handing over your keys.</p>
+<div class="grid g3">
+<div class="card"><h3>🔐 Non-custodial</h3><p>Your funds stay in your control. Trades go through a trading-only agent wallet that can't withdraw.</p></div>
+<div class="card"><h3>⚡ Hyperliquid under the hood</h3><p>Orders execute as real orders on Hyperliquid's on-chain perpetuals exchange.</p></div>
+<div class="card"><h3>🏆 Leaderboards</h3><p>See top traders at a glance and pick who to follow.</p></div>
+<div class="card"><h3>👆 One-click mimic</h3><p>No manual order entry. Mirror a position in a single tap.</p></div>
+<div class="card"><h3>💬 Social feed</h3><p>Follow traders, see their moves and stay in the loop.</p></div>
+<div class="card"><h3>💸 Get paid to lead</h3><p>Build a following and earn when people copy your trades.</p></div>
+</div></section>
+
+<section id="risks"><h2>The honest part: risks</h2><p class="sub">Copy trading is not a shortcut to guaranteed profit. Know these before you start.</p>
+<div class="grid g2">
+<div class="card risk"><div class="num">!</div><h3>Slippage</h3><p>Your fill price can differ from the trader you copy, especially on fast moves or thin markets.</p></div>
+<div class="card risk"><div class="num">!</div><h3>Late entries</h3><p>If you mimic after a trader entered, you may buy higher or sell lower than they did, with less upside left.</p></div>
+<div class="card risk"><div class="num">!</div><h3>Leverage</h3><p>Futures use leverage. Losses scale just like gains, and positions can be liquidated.</p></div>
+<div class="card risk"><div class="num">!</div><h3>Averaging into losers</h3><p>Some traders add to losing positions. A great record can hide a big drawdown waiting to happen.</p></div>
+</div><p class="sub" style="margin-top:24px">Past performance doesn't predict future results. Nothing on this page is financial advice. Only trade what you can afford to lose.</p></section>
+
+<section id="faq"><h2>FAQ</h2>
+<details><summary>What is Invo?</summary><p>A social copy-trading app for crypto where you can find top traders and mimic their futures positions in one click.</p></details>
+<details><summary>Does Invo hold my funds?</summary><p>No. Invo is non-custodial. Trades are placed on Hyperliquid through an agent wallet that can trade but can't withdraw.</p></details>
+<details><summary>What can I trade?</summary><p>170+ futures pairs available on Hyperliquid.</p></details>
+<details><summary>Are there fees?</summary><p>Trading fees apply. Check the Invo app and Hyperliquid for current fees before trading.</p></details>
+<details><summary>Can I lose money?</summary><p>Yes. Leveraged futures are high risk, and copying a trader doesn't guarantee their results. See the risks section above.</p></details>
+<details><summary>Why sign up through this link?</summary><p>It's a referral link, so the page owner may get a referral reward when you join. Your experience in the app is the same.</p></details>
+</section>
+
+<section><div class="cta"><h2>Ready to follow the best?</h2><p class="sub">Join Invo in under a minute.</p><a class="btn ref" href="#">Get started with Invo →</a></div></section>
+</div>
+<footer><div class="wrap"><p>This is an independent referral page. It is not operated by, affiliated with, or endorsed by Involio Inc. or Invo. "Invo" and related marks belong to their owners. Links on this page are referral links and the page owner may earn a reward. Crypto futures trading involves substantial risk of loss and isn't suitable for everyone. Nothing here is financial, investment or legal advice. Check availability and rules in your country before signing up.</p><p style="margin-top:10px">© <span id="y"></span></p></div></footer>
+<script src="assets/qrcode.js"></script>
+<script>
+// ===== Swap your referral link here (used by every CTA and the QR code) =====
+const REFERRAL_URL = 'https://invoapp.com/join/miyatiinc_';
+document.querySelectorAll('a.ref').forEach(a=>{a.href=REFERRAL_URL;a.target='_blank';a.rel='noopener'});
+const q=qrcode(0,'M');q.addData(REFERRAL_URL);q.make();
+document.getElementById('qr').innerHTML=q.createImgTag(6,0,'Scan to join Invo');
+document.getElementById('y').textContent=new Date().getFullYear();
+</script></body></html>
